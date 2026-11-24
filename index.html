@@ -1,396 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>ECommerce</title>
+    <title>Shopping Website</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: lightgray;
+        }
+
+        nav {
+            background: black;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            width: 180px;
+            text-align: center;
+            border-radius: 10px;
+            animation: fade 2s;
+            transition: 0.5s;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        button {
+            background: green;
+            color: white;
+            padding: 10px;
+            border: none;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
-<body background="images/bk.jpg">
-<table border="1" width="100%" cellpadding="10" cellspacing="0">
-     <tr bgcolor="#0D47A1">
-          <!--HEADER -->
-     <td colspan="4">
-     <table width="100%">
-          <tr>
-               <td width="25%">
-                    <img src="images/KLE.jpg" width="200" height="75">
-               </td>
-               <td width="50%" align="center">
-                    <input type="text" size="40" placeholder="Search Products">
-                    <input type="submit" value="Search">
-                </td>
-               <td width="25%" align="center">
-                    <font color="white">
-                            <b>Login</b> ||
-                            <b>Register</b> ||
-                            <b>Cart (0)</b>
-                    </font>
-               </td>
 
-          </tr>
+<body>
 
+    <nav>
+        <h2>MyShop</h2>
+        <p>Home | Products | Contact</p>
+    </nav>
 
+    <h2 align="center">Our Products</h2>
 
-     </table>
+    <div class="products">
 
-     </tr>
-     <tr bgcolor="#112345" align="center">
-          <!--CATEGORIES -->
-          <td colspan="4">
-               <table width="100%" border="0">
-                    <tr align="center">
-                         <td><font color="white"><b>Fashion</b></font></td>
-                         <td><font color="white"><b>Groceries</b></font></td>
-                         <td><font color="white"><b>Electronics</b></font></td>
-                         <td><font color="white"><b>Mobiles</b></font></td>
-                         <td><font color="white"><b>Home appliances</b></font></td>
-                         <td><font color="white"><b>Books</b></font></td>
-                         <td><font color="white"><b>Beauty</b></font></td>
-                         <td><font color="white"><b>Sports</b></font></td>
+        <div class="card">
+            <h3>Mobile</h3>
+            <p>Price: ₹15000</p>
+            <button>Buy Now</button>
+        </div>
 
-                    </tr>
-                  </table>
-         </td>
-     </tr>
-     <tr brcolor="#0dF8DC" align="center">
-          <!--BANNER -->
-          <td colspan="4">
+        <div class="card">
+            <h3>Laptop</h3>
+            <p>Price: ₹45000</p>
+            <button>Buy Now</button>
+        </div>
 
-               <img src="images/01.png"
-                 width="100%"
-                 height="270">
-       </td>
-     </tr>
-              <!--SCROLLING NEWS -->
+        <div class="card">
+            <h3>Headphones</h3>
+            <p>Price: ₹2000</p>
+            <button>Buy Now</button>
+        </div>
 
-          <tr>
-            <td colspan="4">
+    </div>
 
-               <marquee direction="right" scrollamount="15" loop="infinite">
-
-               <img src="images/05.png" width="600" height="180">
-                <img src="images/02.png" width="600" height="180">
-                 <img src="images/03.png" width="600" height="180">
-                  <img src="images/04.png" width="600" height="180">
-
-               </marquee>
-             
-       </td>
-     </tr>
-     <!--PRODUCTS-->
- <tr bgcolor="#123455">
-        <td colspan="4" align="center">
-            <font color="white" size="5">
-                <b>FEATURED PRODUCTS</b>
-            </font>
-        </td>
-    </tr>
-
-    <!-- PRODUCTS LIST-->
-
-<tr bgcolor="#FFFFFF">
-
-        <td align="center">
-
-            <img src="images/shirt.jpg"
-                 width="170"
-                 height="170">
-
-            <h2>Men's Shirt</h2>
-
-            <h1>₹999</h1>
-
-            <input type="button"
-                   value="Add to Cart">
-
-        </td>
-
-
-        <td align="center">
-
-            <img src="images/suit.jpg"
-                 width="170"
-                 height="170">
-
-            <h2>Dress</h2>
-
-            <h1>₹499</h1>
-
-            <input type="button"
-                   value="Add to Cart">
-
-        </td>
-
-        
-        <td align="center">
-
-            <img src="images/derma.jpg"
-                 width="170"
-                 height="170">
-
-            <h2>Beauty</h2>
-
-            <h1>₹1999</h1>
-
-            <input type="button"
-                   value="Add to Cart">
-
-        </td>
-
-        
-        <td align="center">
-
-            <img src="images/holla.webp"
-                 width="170"
-                 height="170">
-
-            <h2>Headphones</h2>
-
-            <h1>₹59999</h1>
-
-            <input type="button"
-                   value="Add to Cart">
-
-        </td>
-
-
-
-
-</tr>
-
-
-<tr bgcolor="#FFFFFF">
-
-        <td align="center">
-
-            <img src="images/acer.jpg"
-                 width="170"
-                 height="170">
-
-            <h2>Laptop</h2>
-
-            <h1>₹1500000</h1>
-
-            <input type="button"
-                   value="Add to Cart">
-
-        </td>
-
-
-        <td align="center">
-
-            <img src="images/rice.jpg"
-                 width="170"
-                 height="170">
-
-            <h2>Rice Bag</h2>
-
-            <h1>₹1499</h1>
-
-            <input type="button"
-                   value="Add to Cart">
-
-        </td>
-
-        
-        <td align="center">
-
-            <img src="images/soap.jpg"
-                 width="170"
-                 height="170">
-
-            <h2>Mysore Soap</h2>
-
-            <h1>₹399</h1>
-
-            <input type="button"
-                   value="Add to Cart">
-
-        </td>
-
-        
-        <td align="center">
-
-            <img src="images/gym.jpg"
-                 width="170"
-                 height="170">
-
-            <h2>Gym equippement</h2>
-
-            <h1>₹1299</h1>
-
-            <input type="button"
-                   value="Add to Cart">
-
-        </td>
-
-        
-<tr bgcolor="#FFFFFF">
-
-        <td align="center">
-
-            <img src="images/oli.webp"
-                 width="170"
-                 height="170">
-
-            <h2>Laptops</h2>
-
-            <h1>₹78999</h1>
-
-            <input type="button"
-                   value="Add to Cart">
-
-        </td>
-
-
-        <td align="center">
-
-            <img src="images/mob.jpg"
-                 width="170"
-                 height="170">
-
-            <h2>Mobiles</h2>
-
-            <h1>₹9499</h1>
-
-            <input type="button"
-                   value="Add to Cart">
-
-        </td>
-
-        
-        <td align="center">
-
-            <img src="images/racket.jpg"
-                 width="170"
-                 height="170">
-
-            <h2>Badminton racket</h2>
-
-            <h1>₹1999</h1>
-
-            <input type="button"
-                   value="Add to Cart">
-
-        </td>
-
-        
-        <td align="center">
-
-            <img src="images/blue.jpg"
-                 width="170"
-                 height="170">
-
-            <h2>Beauty</h2>
-
-            <h1>₹1299</h1>
-
-            <input type="button"
-                   value="Add to Cart">
-
-        </td>
-
-</tr>
-</tr>
-
-<!-- CUSTOMER SERVICES -->
-
-    <tr bgcolor="yellow">
-
-        <td align="center">
-
-            <h3>Easy Returns</h3>
-
-        </td>
-
-        <td align="center">
-
-            <h3>24 × 7 Support</h3>
-
-        </td>
-
-        <td align="center">
-
-            <h3>Secure and Easy Payment</h3>
-
-        </td>
-
-        <td align="center">
-
-            <h3>Fast Delivery</h3>
-
-        </td>
-
-    </tr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-     <tr>
-          <!--FOOTER -->
-<tr bgcolor="#0D47A1">
-          <!--HEADER -->
-     <td colspan="4">
-     <table width="100%">
-          <tr>
-               <td width="25%">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.6631459528603!2d80.62001431044068!3d16.441925684227346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f0a2a7d81943%3A0x8ba5d78f65df94b8!2sKL%20University!5e0!3m2!1sen!2sin!4v1785913650294!5m2!1sen!2sin" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-               </td>
-               <td width="50%" align="center">
-                    <font color="white">
-                            <h2>KLECommerce</h2>
-                            
-                            Home ||
-                         Products ||
-                         About Us ||
-                         Contact Us ||
-                              Help
-
-                <br><br>
-
-                Copyright © 2026 KLECommerce
-
-                            
-                    </font>
-                    
-                </td>
-               <td width="25%" align="center">
-                   <input type="text" size="30" placeholder="Customer Feedback">
-                   <input type="text" size="30" placeholder="Customer Name">
-                   <input type="text" size="30" placeholder="Product Rating">
-                   <br> 
-                   <input type="submit" value="Send">
-               </td>
-
-          </tr>
-
-          
-
-     </table>
-
-
-
-
-
-     </tr>
-
-
-
-     </tr>
-
-
-
-</table>
-
-     
 </body>
 </html>
